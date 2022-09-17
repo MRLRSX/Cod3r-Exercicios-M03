@@ -44,5 +44,7 @@ public class Program_01 {
 				return p1.getPreco().compareTo(p2.getPreco());
 			}
 		});
+		
+		produtos.sort((p1, p2) -> p1.getPreco().compareTo(p2.getPreco()));
 	}
 }
