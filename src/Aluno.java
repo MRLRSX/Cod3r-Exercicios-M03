@@ -25,6 +25,11 @@ public class Aluno {
 	public Double media() {
 		return notas.stream().mapToDouble(p -> p).average().getAsDouble();
 	}
-	
 
+	@Override
+	public String toString() {
+		return "nome: " + nome + ", notas: " + notas;
+	}
+	
+    
 }
